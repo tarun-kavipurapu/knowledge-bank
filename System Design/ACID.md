@@ -3,6 +3,7 @@ Either the The operation Should happen Completely or it should not there shouldn
 	My Own Experience
 	 1. When i Was creating the signup Endpoint I had Take User address as an Input and also User Details as an Input
     2. In the Database I had address table separately and the users table separately I had to enter details into both of them atomically So I wrapped both of them in a transaction and executed it.
+Implementation of Atomicity:
 
 
 ### Consistency
@@ -18,11 +19,16 @@ Lear about `constraints` `cascades` `triggers`
 `Trigger`:
 		1. On certain operation trigger something
 ### Isolation Levels
-
-	
+- Its not like at a single time Instance only one transaction is happening in the database, their may be multiple transactions that are happening in the database  so the isolation levels are nothing but How much of one transaction is visible to the other transaction before the second one first one commits.
+- ![[Pasted image 20241027231515.png]]
+- Typically there if it perfectly not visible then the transactions happen serially this is something that we can configure
+### Further More at [[Isolation Levels]]
 
 ### Durability
 
 No matter what happens so long as disc is there data should be there.
 the changes should outlive the outage.
-SQL databases are atmost 
+SQL databases are atmost Durable 
+
+
+Implementation of Atomicity
