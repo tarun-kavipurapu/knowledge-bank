@@ -2,7 +2,9 @@ Try to do this practically
 ---
 
 ### **ACID - Isolation Levels**
-- **I in ACID represents Isolation**, which defines how much of one transaction is visible to another. We can configure this visibility using different isolation levels. Below, we’ll look at each isolation level with practical examples.
+
+### Practical Implementation of this is already done
+- **in ACID represents Isolation**, which defines how much of one transaction is visible to another. We can configure this visibility using different isolation levels. Below, we’ll look at each isolation level with practical examples.
   
   **Note**: The two transactions discussed are happening in parallel (simultaneously). You need to practically perform them to fully understand their behavior.
 
